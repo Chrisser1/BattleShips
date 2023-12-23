@@ -1,4 +1,4 @@
-project "App"
+project "Battleship-App"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++20"
@@ -12,12 +12,12 @@ project "App"
       "Source",
 
 	  -- Include Core
-	  "../Core/Source"
+	  "../Battleship-Core/Source"
    }
 
    links
    {
-      "Core"
+      "Battleship-Core"
    }
 
    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
